@@ -1,0 +1,6 @@
+http://blog.rchapman.org/posts/Linux_System_Call_Table_for_x86_64/
+
+rg 'SYSCALL_DEFINE.\(read,'
+
+fs/read_write.c
+621:SYSCALL_DEFINE3(read, unsigned int, fd, char __user *, buf, size_t, count)
